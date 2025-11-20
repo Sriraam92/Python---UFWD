@@ -13,12 +13,12 @@ o = ["Rock", "Paper", "Scissors"]
 while s == 0:
     print("Round: ", r)
     c = input("Enter your choice: ")
-    if c.lower() == "exit":
+    if c == "Exit" or c =="exit":
         s = 1
         break
-    
-    if c != "Rock" or c != "Paper" or c != "Scissors":
-        print("Please enter a correct choice")
+
+    if c != "Rock" and c != "Paper" and c != "Scissors":
+        print("Please enter a correct choice\n")
         continue
 
     else:
@@ -40,6 +40,7 @@ elif w == l:
 else:
     print(f"\nYou lost against the computer by margin of {w}-{l}")
 
+print("\n")
 
     
 
