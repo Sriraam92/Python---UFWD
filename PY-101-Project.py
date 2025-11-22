@@ -17,7 +17,7 @@ while s == 0:
         s = 1
         break
 
-    if c != "Rock" and c != "Paper" and c != "Scissors":
+    if c not in o:
         print("Please enter a correct choice\n")
         continue
 
